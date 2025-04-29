@@ -1,0 +1,7 @@
+echo "# UF2406_EXAMEN_FINAL" >> README.md
+git init
+git add .
+git commit -m "Primer commit"
+git branch -M main
+git remote add origin https://github.com/snoumaz/vida_de_aplicaciones.git
+git push -u origin main
