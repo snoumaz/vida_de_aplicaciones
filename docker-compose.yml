@@ -1,5 +1,5 @@
 services:
-  porfolio:
+  test:
     build: .
     container_name: test
     ports:
