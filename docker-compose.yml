@@ -1,9 +1,11 @@
+version: "3.8"
+
 services:
   test:
-    build: .
+    image: snoumazz/vida_de_aplicaciones:v2
     container_name: test
     ports:
-      - "8000:80"
+      - "8080:80"
     tmpfs:
       - /usr/local/apache2/logs
     security_opt:
