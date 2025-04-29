@@ -1,0 +1,21 @@
+services:
+  porfolio:
+    build: .
+    container_name: test
+    ports:
+      - "8000:80"
+    tmpfs:
+      - /usr/local/apache2/logs
+    security_opt:
+      - "no-new-privileges:true"
+    cap_drop:
+      - ALL
+    restart: always
+    mem_limit: 256m
+    cpus: 0.5
+    networks:
+      - test
+
+networks:
+  test:
+    driver: bridge

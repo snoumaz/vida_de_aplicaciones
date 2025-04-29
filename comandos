@@ -1,3 +1,4 @@
+\\ Comandos para GitHub
 echo "# UF2406_EXAMEN_FINAL" >> README.md
 git init
 git add .
@@ -5,3 +6,11 @@ git commit -m "Primer commit"
 git branch -M main
 git remote add origin https://github.com/snoumaz/vida_de_aplicaciones.git
 git push -u origin main
+
+\\ Comandos para docker y DockerHub
+docker build -t snoumazz/vida_de_aplicaciones:v1 .
+docker run -dit --name test -p 99:80 snoumazz/vida_de_aplicaciones:v1
+docker ps
+(compose)
+docker-compose up -d
+docker push snoumazz/vida_de_aplicaciones:v1
